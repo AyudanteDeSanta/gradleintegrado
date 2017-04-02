@@ -1,0 +1,17 @@
+<!doctype html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content, handling form submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<!--<p th:text="'Hola, '+ ${name} + '!!!' " ></p>  -->
+	<br />
+	<h1>Form</h1>
+	<form action="#" th:action="@{/greetingget}" th:object="${greeting}" method="post" >
+		<p>Id: <input type="text" th:field="*{id}" /> </p>
+		<p>Message: <input type="text" th:field="*{content}" /></p>
+		<p><input type="submit" value="submit" /> <input type="reset" value="reset" /> </p>
+	</form>
+</body>
+</html>
