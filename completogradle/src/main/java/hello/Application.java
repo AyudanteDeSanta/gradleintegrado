@@ -29,6 +29,7 @@ public class Application{
 			repository.save(new Customer("Juan", "Rodriguez"));
 			repository.save(new Customer("Armando","Casas"));
 			repository.save(new Customer("Juliana", "Sanchez"));
+			repository.save(new Customer("Natalia", "Giraldo"));
 			
 			//llevar al log todos los elementos de customer
 			log.info("Customer entontrados con findAll():");
