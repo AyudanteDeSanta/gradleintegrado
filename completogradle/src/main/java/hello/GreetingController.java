@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class GreetingController {
-	
+		
 	@GetMapping("/greetingget")
 	public String greetingForm(Model model){
-		model.addAttribute("greeting", new Greeting());
+		model.addAttribute("greeting", new Greeting());	
 		return "greeting";
 	}
 	
@@ -29,7 +29,7 @@ public class GreetingController {
 		return "result";
 	}
 	
-	/*@RequestMapping("/greeting")
+	/*@RequestMapping("/greetingget")
 	public String greeting(@RequestParam(value="name", required=false, defaultValue = "Mundo") String name, Model model ){
 		//asociar paraemtro name del request con el parámetro de entrada
 		model.addAttribute("name", name);
