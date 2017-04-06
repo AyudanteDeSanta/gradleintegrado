@@ -20,7 +20,7 @@ public class GreetingController {
 		
 	@GetMapping("/greetingget")
 	public String greetingForm(Model model){
-		model.addAttribute("greeting", new Greeting());	
+		model.addAttribute("greeting", new Greeting(1 , "didier"));	
 		return "greeting";
 	}
 	
