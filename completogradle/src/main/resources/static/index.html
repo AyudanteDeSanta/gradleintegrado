@@ -4,7 +4,22 @@
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body>
-	<p>Ve a greeting <a href="/greeting" >Aqui</a></p>
-</body>
+<body ng-app="myApp">
+<div  ng-controller="AppController">
+      <div>
+        <h1>Lista</h1>
+      </div>
+     <!-- <span ng-bind="items.id"></span>
+     <span ng-bind="items.content"></span> -->
+        <div ng-repeat="item in items">
+          <span>{{item.id}}</span>
+        </div>
+        <hr />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.js"></script>
+    <script type="text/javascript" src="./app/app.js"></script>
+    <script type="text/javascript" src="./app/controllers.js"></script>
+    <script type="text/javascript" src="./app/services.js"></script>
+  </body>
 </html>
